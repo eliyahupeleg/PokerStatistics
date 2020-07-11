@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="734dp"
+        android:layout_height="407dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <ImageButton
+        android:id="@+id/userCards"
+        android:layout_width="162dp"
+        android:layout_height="157dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/player_cards"
+        />
+
+    <ImageButton
+        android:id="@+id/centerCard1"
+        android:layout_width="82dp"
+        android:layout_height="185dp"
+        android:layout_marginEnd="166dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/centerCard2"
+        app:srcCompat="@drawable/one_card"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <ImageButton
+        android:id="@+id/centerCard2"
+        android:layout_width="82dp"
+        android:layout_height="185dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:clickable="false"
+        app:layout_constraintStart_toEndOf="@+id/centerCard3"
+        app:srcCompat="@drawable/one_card"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <ImageButton
+        android:id="@+id/centerCard3"
+        android:layout_width="82dp"
+        android:layout_height="185dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintStart_toEndOf="@+id/centerCard4"
+        app:srcCompat="@drawable/one_card"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:clickable="false"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <ImageButton
+        android:id="@+id/centerCard4"
+        android:layout_width="82dp"
+        android:layout_height="185dp"
+        android:layout_marginEnd="168dp"
+        app:layout_constraintStart_toEndOf="@+id/centerCard5"
+        app:srcCompat="@drawable/one_card"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:clickable="false"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <ImageButton
+        android:id="@+id/centerCard5"
+        android:layout_width="82dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="155dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/one_card"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:clickable="false"
+        tools:layout_editor_absoluteY="58dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
